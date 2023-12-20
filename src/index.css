@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .typographyHLL {
+    @apply text-xl tracking-base font-light;
+  }
+  .typographyHML {
+    @apply text-lg font-light;
+  }
+  .typographyHSM {
+    @apply text-lg font-medium;
+  }
+  .typographyHXSM {
+    @apply text-base font-medium;
+  }
+  .typographyBML {
+    @apply text-sm font-light;
+  }
+  .typographyBSL {
+    @apply text-xs font-light;
+  }
+}
+
+body {
+  @apply bg-darkBlue;
+}
