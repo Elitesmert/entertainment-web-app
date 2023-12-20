@@ -25,14 +25,14 @@ const Card = ({data, initialBookmarked, handleBookmark}) => {
       </div>
       <div className='absolute w-full h-[100xp] bottom-0 p-6 bg-gradient-to-t from-black/75 to-black/0'>
         <div className='flex gap-2 items-center text-gray-300 h-[19px]'>
-          <p className='typographyBSL'>{data.year}</p>
+          <p className='typographyBML'>{data.year}</p>
           <GoDotFill className='h-[3px] w-[3px]' />
           <div className='flex gap-[6px] items-center'>
             <RiFilmFill className='w-3 h-3' />
-            <p className='typographyBSL'>{data.presentation}</p>
+            <p className='typographyBML'>{data.presentation}</p>
           </div>
           <GoDotFill className='h-[3px] w-[3px]' />
-          <p className='typographyBSL'>{data.ageRestriction}</p>
+          <p className='typographyBML'>{data.ageRestriction}</p>
         </div>
         <div>
           <h1 className='typographyHSM'>{data.title}</h1>

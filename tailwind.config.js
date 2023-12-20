@@ -28,7 +28,10 @@ export default {
         base: '-0.5px',
       },
       borderRadius: {
-        '20': '20px',
+        20: '20px',
+      },
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fill, minmax(220px, 1fr))',
       },
     },
   },
