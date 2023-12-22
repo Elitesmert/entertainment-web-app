@@ -13,7 +13,7 @@ const CardMini = ({data, initialBookmarked, handleBookmark}) => {
     }
   }
   return (
-    <div className='w-[220px] flex flex-col gap-2'>
+    <div className='w-[164px] flex flex-col gap-2'>
       <div className='relative'>
         <Thumbnail image={data.image} />
         <div
@@ -30,17 +30,17 @@ const CardMini = ({data, initialBookmarked, handleBookmark}) => {
       <div>
         <div className='w-full h-[100xp] bottom-0'>
           <div className='flex gap-2 items-center text-gray-300 h-[19px]'>
-            <p className='typographyBSL'>{data.year}</p>
+            <p className='text-[11px]'>{data.year}</p>
             <GoDotFill className='h-[3px] w-[3px]' />
             <div className='flex gap-[6px] items-center'>
-              <RiFilmFill className='w-3 h-3' />
-              <p className='typographyBSL'>{data.presentation}</p>
+              <RiFilmFill className='w-[10px] h-[10px]' />
+              <p className='text-[11px]'>{data.presentation}</p>
             </div>
             <GoDotFill className='h-[3px] w-[3px]' />
-            <p className='typographyBSL'>{data.ageRestriction}</p>
+            <p className='text-[11px]'>{data.ageRestriction}</p>
           </div>
           <div>
-            <h1 className='typographyHXSM'>{data.title}</h1>
+            <h1 className='text-[14px]'>{data.title}</h1>
           </div>
         </div>
       </div>

@@ -10,14 +10,17 @@ import classNames from 'classnames'
 
 const Sidebar = () => {
   return (
-    <aside className='pt-8'>
-      <div className='w-full h-[72px] bg-semiDarkBlue rounded-20 flex justify-between pr-4 pl-6 items-center'>
+    <aside className=''>
+      <div
+        className='w-full h-14 bg-semiDarkBlue 
+       flex justify-between pr-4 pl-6 items-center'
+      >
         <div>
           <Link to='/'>
-            <img src={logo} alt='logo' className='w-8 h-6' />
+            <img src={logo} alt='logo' className='w-[25px] h-5' />
           </Link>
         </div>
-        <div className='flex gap-8'>
+        <div className='flex gap-5'>
           <NavLink
             to='/'
             className={({isActive}) => classNames('text-greyishBlue', {'text-white': !isActive})}
@@ -45,7 +48,7 @@ const Sidebar = () => {
         </div>
         <div className='rounded-full border border-white overflow-clip '>
           <Link to='/'>
-            <img src={face} alt='logo' className='w-8 h-8' />
+            <img src={face} alt='logo' className='w-6 h-6' />
           </Link>
         </div>
       </div>

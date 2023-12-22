@@ -17,19 +17,19 @@ const Slider = () => {
 
   return (
     <div className='mb-[39px]'>
-      <h1 className='typographyHLL mb-[25px]'>Trending</h1>
+      <h1 className='typographyHLL mb-[25px] px-4'>Trending</h1>
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={'auto'}
         centeredSlides={false}
         loop={true}
-        spaceBetween={40}
-        className='mySwiper'
+        spaceBetween={16}
+        className='mySwiper px-4'
       >
         {movies.map(
           (item, index) =>
             item.isTrend && (
-              <SwiperSlide className='w-[470px]' key={index}>
+              <SwiperSlide className='w-[240px]' key={index}>
                 <Card
                   data={item}
                   initialBookmarked={item.isBookmarked}

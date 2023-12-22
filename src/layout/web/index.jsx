@@ -4,7 +4,7 @@ import {Outlet} from 'react-router-dom'
 
 const WebLayout = () => {
   return (
-    <main className='max-h-full text-white pl-[25px] pr-6'>
+    <main className='max-h-full text-white '>
       <Sidebar />
       <div className='h-max'>
         <Outlet />

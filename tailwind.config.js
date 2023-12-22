@@ -31,7 +31,7 @@ export default {
         20: '20px',
       },
       gridTemplateColumns: {
-        'auto-fit': 'repeat(auto-fill, minmax(220px, 1fr))',
+        'auto-fit': 'repeat(auto-fill, minmax(164px, 1fr))',
       },
     },
   },
