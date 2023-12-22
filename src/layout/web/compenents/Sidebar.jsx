@@ -34,13 +34,13 @@ const Sidebar = () => {
             <RiFilmFill className='w-5 h-5' />
           </NavLink>
           <NavLink
-            to='/'
+            to='/tv-series'
             className={({isActive}) => classNames('text-greyishBlue', {'text-white': !isActive})}
           >
             <PiTelevisionFill className='w-5 h-5' />
           </NavLink>
           <NavLink
-            to='/'
+            to='/bookmarked'
             className={({isActive}) => classNames('text-greyishBlue', {'text-white': !isActive})}
           >
             <PiBookmarkSimpleFill className='w-5 h-5' />
