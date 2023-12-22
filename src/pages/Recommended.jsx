@@ -23,6 +23,7 @@ const Recommended = ({searchResults, searchText}) => {
                 <CardMini
                   key={index}
                   data={item}
+                  initialBookmarked={item.isBookmarked}
                   handleBookmark={(newBookmarkState) =>
                     handleBookmarkChange(index, newBookmarkState)
                   }
@@ -32,6 +33,7 @@ const Recommended = ({searchResults, searchText}) => {
               <CardMini
                 key={index}
                 data={item}
+                initialBookmarked={item.isBookmarked}
                 handleBookmark={(newBookmarkState) => handleBookmarkChange(index, newBookmarkState)}
               />
             ))}

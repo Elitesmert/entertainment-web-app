@@ -104,7 +104,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/no-land-beyond.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -116,7 +116,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/during-the-hunt.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -152,7 +152,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/below-echo.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -188,7 +188,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/community-of-ours.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -236,7 +236,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/whispering-hill.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -260,7 +260,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/lone-heart.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -284,7 +284,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/dogs.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -308,7 +308,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/the-tasty-tour.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -332,7 +332,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/unresolved-cases.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
   {
@@ -344,7 +344,7 @@ export const movies = [
     description:
       'The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species.',
     image: './image/mission-saturn.png',
-    isBookmarked: false,
+    isBookmarked: true,
     isTrend: false,
   },
 ]

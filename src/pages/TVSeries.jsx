@@ -7,6 +7,10 @@ import CardMini from '@/component/CardMini'
 const TVSeries = () => {
   const [searchResults, setSearchResults] = useState(null)
   const [searchText, setSearchText] = useState('')
+  const handleBookmarkChange = (index, newBookmarkState) => {
+    const newData = [...movies]
+    newData[index].isBookmarked = newBookmarkState
+  }
   return (
     <div className='pt-6'>
       <Search
@@ -29,6 +33,7 @@ const TVSeries = () => {
                   <CardMini
                     key={index}
                     data={item}
+                    initialBookmarked={item.isBookmarked}
                     handleBookmark={(newBookmarkState) =>
                       handleBookmarkChange(index, newBookmarkState)
                     }
@@ -40,6 +45,7 @@ const TVSeries = () => {
                   <CardMini
                     key={index}
                     data={item}
+                    initialBookmarked={item.isBookmarked}
                     handleBookmark={(newBookmarkState) =>
                       handleBookmarkChange(index, newBookmarkState)
                     }

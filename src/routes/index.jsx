@@ -6,6 +6,7 @@ import {createBrowserRouter} from 'react-router-dom'
 import Movies from '@/pages/Movies'
 import TVSeries from '@/pages/TVSeries'
 import Bookmarked from '@/pages/Bookmarked'
+import Login from '@/pages/Login'
 
 const routes = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const routes = createBrowserRouter([
         element: <Bookmarked />,
       },
     ],
+  },
+  {
+    path: '/login',
+    element: <Login />,
   },
 ])
 
