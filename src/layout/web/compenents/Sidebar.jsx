@@ -47,7 +47,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
         <div className='rounded-full border border-white overflow-clip '>
-          <Link to='/'>
+          <Link to='/login'>
             <img src={face} alt='logo' className='w-6 h-6' />
           </Link>
         </div>
