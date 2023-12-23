@@ -63,7 +63,7 @@ const SignUp = () => {
       </div>
       <div className='px-6 pt-6 pb-8 bg-semiDarkBlue rounded-[10px] relative'>
         <div className='absolute -top-2 -right-2 bg-greyishBlue rounded-full flex justify-center items-center w-6 h-6 hover:bg-white group'>
-          <Link to='/'>
+          <Link to='/login'>
             <IoClose className='text-white w-4 h-4 group-hover:text-lightRed' />
           </Link>
         </div>

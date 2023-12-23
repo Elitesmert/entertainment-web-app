@@ -7,8 +7,11 @@ import {RiFilmFill} from 'react-icons/ri'
 import {PiTelevisionFill, PiBookmarkSimpleFill} from 'react-icons/pi'
 import {NavLink} from 'react-router-dom'
 import classNames from 'classnames'
-
+import {RiLoginBoxFill} from 'react-icons/ri'
 const Sidebar = () => {
+  const jsonData = localStorage.getItem('localData')
+  const parseData = JSON.parse(jsonData)
+
   return (
     <aside className=''>
       <div
@@ -46,11 +49,17 @@ const Sidebar = () => {
             <PiBookmarkSimpleFill className='w-5 h-5' />
           </NavLink>
         </div>
-        <div className='rounded-full border border-white overflow-clip '>
+        {parseData ? (
+          <div className='rounded-full border border-white overflow-clip '>
+            <Link to='/login'>
+              <img src={face} alt='logo' className='w-6 h-6' />
+            </Link>
+          </div>
+        ) : (
           <Link to='/login'>
-            <img src={face} alt='logo' className='w-6 h-6' />
+            <RiLoginBoxFill className='w-5 h-5 cursor-pointer' />
           </Link>
-        </div>
+        )}
       </div>
     </aside>
   )
