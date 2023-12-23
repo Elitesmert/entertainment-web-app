@@ -4,7 +4,17 @@ import {useState} from 'react'
 
 const Input = ({type, name, id, placeholder, onChange, error}) => {
   const [isFocus, setIsFocus] = useState(false)
-  console.log(error)
+  const errorMessage = () => {
+    if (error.email && name === 'email') {
+      return error.email
+    } else if (error.password && name === 'password') {
+      return error.password
+    } else if (error.rPassword && name === 'rPassword') {
+      return error.rPassword
+    }
+
+    return null // No error
+  }
   return (
     <div className='relative'>
       <input
@@ -22,19 +32,17 @@ const Input = ({type, name, id, placeholder, onChange, error}) => {
           'bg-greyishBlue absolute w-full h-[1px] -bottom-3 transition-all duration-300 ease-out',
           {
             '!bg-white': isFocus,
-            '!bg-lightRed': error.email,
-            '!bg-lightRed': error.password,
+            '!bg-lightRed':
+              (error.email && name === 'email') ||
+              (error.password && name === 'password') ||
+              (error.rPassword && name === 'rPassword'),
           }
         )}
       ></div>
-      {type === 'email' && error.email && (
-        <p className='absolute top-1/2 right-0 transform -translate-x-0 -translate-y-1/2 text-[15px] text-lightRed'>
-          {error.email}
-        </p>
-      )}
-      {type === 'password' && error.password && (
+
+      {errorMessage() && (
         <p className='absolute top-1/2 right-0 transform -translate-x-0 -translate-y-1/2 text-[15px] text-lightRed '>
-          {error.password}
+          {errorMessage()}
         </p>
       )}
     </div>

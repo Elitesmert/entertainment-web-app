@@ -7,6 +7,7 @@ import Movies from '@/pages/Movies'
 import TVSeries from '@/pages/TVSeries'
 import Bookmarked from '@/pages/Bookmarked'
 import Login from '@/pages/Login'
+import SignUp from '@/pages/SignUp'
 
 const routes = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const routes = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
+  },
+  {
+    path: '/sign-up',
+    element: <SignUp />,
   },
 ])
 

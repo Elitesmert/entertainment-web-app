@@ -3,9 +3,12 @@ import logo from '@/assets/svg/Movie.svg'
 import Input from '@/component/Input'
 import {useState} from 'react'
 import Button from '@/component/Button'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {IoClose} from 'react-icons/io5'
 const Login = () => {
+  const jsonData = localStorage.getItem('jsonData')
+  const parseData = JSON.parse(jsonData)
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -34,7 +37,27 @@ const Login = () => {
     }
 
     setError(validationError)
+
+    if (Object.keys(validationError).length === 0) {
+      // Do something with the validated data
+      const validatedData = {
+        email: formData.email,
+        password: formData.password,
+      }
+
+      if (
+        parseData.email === validatedData.email &&
+        parseData.password === validatedData.password
+      ) {
+        localStorage.setItem('localData', JSON.stringify(validatedData))
+        localStorage.removeItem('jsonData');
+        navigate('/')
+      } else {
+        alert('Email or password is incorrect')
+      }
+    }
   }
+
   return (
     <div className='h-screen text-white pt-12 px-7'>
       <div className='mx-auto w-8 mb-14'>
