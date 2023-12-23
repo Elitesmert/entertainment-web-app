@@ -1,26 +1,26 @@
 import face from '@/assets/image/face.jpg'
 import logo from '@/assets/svg/Movie.svg'
 import classNames from 'classnames'
-import { BiSolidCategory } from 'react-icons/bi'
-import { PiBookmarkSimpleFill, PiTelevisionFill } from 'react-icons/pi'
-import { RiFilmFill, RiLoginBoxFill } from 'react-icons/ri'
-import { Link, NavLink } from 'react-router-dom'
+import {BiSolidCategory} from 'react-icons/bi'
+import {PiBookmarkSimpleFill, PiTelevisionFill} from 'react-icons/pi'
+import {RiFilmFill, RiLoginBoxFill} from 'react-icons/ri'
+import {Link, NavLink} from 'react-router-dom'
 const Sidebar = () => {
   const jsonData = localStorage.getItem('localData')
   const parseData = JSON.parse(jsonData)
 
   return (
-    <aside className=''>
+    <aside className='md:px-6'>
       <div
         className='w-full h-14 bg-semiDarkBlue 
-       flex justify-between pr-4 pl-6 items-center'
+       flex justify-between pr-4 pl-6 items-center md:rounded-[10px]'
       >
         <div>
           <Link to='/'>
-            <img src={logo} alt='logo' className='w-[25px] h-5' />
+            <img src={logo} alt='logo' className='w-[25px] h-5 md:w-8 md:h-6' />
           </Link>
         </div>
-        <div className='flex gap-5'>
+        <div className='flex gap-5 md:gap-7'>
           <NavLink
             to='/'
             className={({isActive}) => classNames('text-greyishBlue', {'text-white': !isActive})}
@@ -49,12 +49,12 @@ const Sidebar = () => {
         {parseData ? (
           <div className='rounded-full border border-white overflow-clip '>
             <Link to='/login'>
-              <img src={face} alt='logo' className='w-6 h-6' />
+              <img src={face} alt='logo' className='w-6 h-6 md:w-8 md:h-8' />
             </Link>
           </div>
         ) : (
           <Link to='/login'>
-            <RiLoginBoxFill className='w-5 h-5 cursor-pointer' />
+            <RiLoginBoxFill className='w-5 h-5 md:w-8 md:h-8 cursor-pointer' />
           </Link>
         )}
       </div>

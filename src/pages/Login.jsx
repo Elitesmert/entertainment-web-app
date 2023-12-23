@@ -1,9 +1,9 @@
 import logo from '@/assets/svg/Movie.svg'
 import Button from '@/component/Button'
 import Input from '@/component/Input'
-import { useState } from 'react'
-import { IoClose } from 'react-icons/io5'
-import { Link, useNavigate } from 'react-router-dom'
+import {useState} from 'react'
+import {IoClose} from 'react-icons/io5'
+import {Link, useNavigate} from 'react-router-dom'
 const Login = () => {
   const jsonData = localStorage.getItem('jsonData')
   const parseData = JSON.parse(jsonData)
@@ -49,7 +49,7 @@ const Login = () => {
         parseData.password === validatedData.password
       ) {
         localStorage.setItem('localData', JSON.stringify(validatedData))
-        localStorage.removeItem('jsonData');
+        localStorage.removeItem('jsonData')
         navigate('/')
       } else {
         alert('Email or password is incorrect')
@@ -58,11 +58,11 @@ const Login = () => {
   }
 
   return (
-    <div className='h-screen text-white pt-12 px-7'>
+    <div className='h-screen text-white pt-12 px-7 '>
       <div className='mx-auto w-8 mb-14'>
         <img src={logo} alt='' />
       </div>
-      <div className='px-6 pt-6 pb-8 bg-semiDarkBlue rounded-[10px] relative'>
+      <div className='px-6 pt-6 pb-8 bg-semiDarkBlue rounded-[10px] relative md:w-[400px] md:mx-auto'>
         <div className='absolute -top-2 -right-2 bg-greyishBlue rounded-full flex justify-center items-center w-6 h-6 hover:bg-white group'>
           <Link to='/'>
             <IoClose className='text-white w-4 h-4 group-hover:text-lightRed' />

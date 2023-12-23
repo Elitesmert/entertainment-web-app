@@ -1,7 +1,7 @@
 import CardMini from '@/component/CardMini'
 import Search from '@/component/Search'
-import { movies } from '@/data/movies'
-import { useState } from 'react'
+import {movies} from '@/data/movies'
+import {useState} from 'react'
 
 const TVSeries = () => {
   const [searchResults, setSearchResults] = useState(null)
@@ -11,12 +11,12 @@ const TVSeries = () => {
     newData[index].isBookmarked = newBookmarkState
   }
   return (
-    <div className='pt-6'>
+    <div className='pt-6 md:pt-8'>
       <Search
         handleSearchResults={(handleSearchResults) => setSearchResults(handleSearchResults)}
         handleSearchText={(handleSearchText) => setSearchText(handleSearchText)}
       />
-      <div className='px-4'>
+      <div className='px-4 md:px-6'>
         <h1 className='text-[20px] font-light mb-6'>
           {searchText.length > 2
             ? `Found ${
@@ -24,7 +24,7 @@ const TVSeries = () => {
               } results for '${searchText}' from TV Series`
             : 'TV Series'}
         </h1>
-        <div className='grid grid-cols-auto-fit-164 gap-y-6 gap-x-[15px] justify-items-center'>
+        <div className='grid grid-cols-auto-fit-164 md:grid-cols-auto-fit-220 gap-y-6 gap-x-[15px] md:gap-x-[29px] justify-items-center'>
           {searchText.length < 3
             ? movies
                 .filter((item) => item.presentation === 'TV Series')
