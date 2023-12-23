@@ -1,4 +1,3 @@
-import React from 'react'
 import {FaCirclePlay} from 'react-icons/fa6'
 const Thumbnail = ({image}) => {
   return (

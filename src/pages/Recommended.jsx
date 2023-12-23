@@ -1,6 +1,5 @@
-import React from 'react'
-import {movies} from '@/data/movies'
 import CardMini from '@/component/CardMini'
+import { movies } from '@/data/movies'
 
 const Recommended = ({searchResults, searchText}) => {
   const handleBookmarkChange = (index, newBookmarkState) => {

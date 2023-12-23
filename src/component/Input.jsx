@@ -1,6 +1,5 @@
 import classNames from 'classnames'
-import React from 'react'
-import {useState} from 'react'
+import { useState } from 'react'
 
 const Input = ({type, name, id, placeholder, onChange, error}) => {
   const [isFocus, setIsFocus] = useState(false)

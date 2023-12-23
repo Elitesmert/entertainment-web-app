@@ -1,10 +1,9 @@
-import React from 'react'
 import logo from '@/assets/svg/Movie.svg'
-import Input from '@/component/Input'
-import {useState} from 'react'
 import Button from '@/component/Button'
-import {Link, useNavigate} from 'react-router-dom'
-import {IoClose} from 'react-icons/io5'
+import Input from '@/component/Input'
+import { useState } from 'react'
+import { IoClose } from 'react-icons/io5'
+import { Link, useNavigate } from 'react-router-dom'
 const Login = () => {
   const jsonData = localStorage.getItem('jsonData')
   const parseData = JSON.parse(jsonData)

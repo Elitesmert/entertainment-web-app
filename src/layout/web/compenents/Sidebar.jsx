@@ -1,13 +1,10 @@
-import React from 'react'
-import logo from '@/assets/svg/Movie.svg'
 import face from '@/assets/image/face.jpg'
-import {Link} from 'react-router-dom'
-import {BiSolidCategory} from 'react-icons/bi'
-import {RiFilmFill} from 'react-icons/ri'
-import {PiTelevisionFill, PiBookmarkSimpleFill} from 'react-icons/pi'
-import {NavLink} from 'react-router-dom'
+import logo from '@/assets/svg/Movie.svg'
 import classNames from 'classnames'
-import {RiLoginBoxFill} from 'react-icons/ri'
+import { BiSolidCategory } from 'react-icons/bi'
+import { PiBookmarkSimpleFill, PiTelevisionFill } from 'react-icons/pi'
+import { RiFilmFill, RiLoginBoxFill } from 'react-icons/ri'
+import { Link, NavLink } from 'react-router-dom'
 const Sidebar = () => {
   const jsonData = localStorage.getItem('localData')
   const parseData = JSON.parse(jsonData)

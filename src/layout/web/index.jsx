@@ -1,6 +1,5 @@
-import React from 'react'
+import { Outlet } from 'react-router-dom'
 import Sidebar from './compenents/Sidebar'
-import {Outlet} from 'react-router-dom'
 
 const WebLayout = () => {
   return (

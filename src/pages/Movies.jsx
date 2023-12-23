@@ -1,8 +1,7 @@
-import Search from '@/component/Search'
-import React from 'react'
-import {useState} from 'react'
-import {movies} from '@/data/movies'
 import CardMini from '@/component/CardMini'
+import Search from '@/component/Search'
+import { movies } from '@/data/movies'
+import { useState } from 'react'
 
 const Movies = () => {
   const [searchResults, setSearchResults] = useState(null)

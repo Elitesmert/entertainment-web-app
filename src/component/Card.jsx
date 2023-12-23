@@ -1,6 +1,6 @@
-import {GoBookmark, GoBookmarkFill, GoDotFill} from 'react-icons/go'
-import {RiFilmFill} from 'react-icons/ri'
-import React, {useState} from 'react'
+import { useState } from 'react'
+import { GoBookmark, GoBookmarkFill, GoDotFill } from 'react-icons/go'
+import { RiFilmFill } from 'react-icons/ri'
 
 const Card = ({data, initialBookmarked, handleBookmark}) => {
   const [bookmarked, setBookmarked] = useState(initialBookmarked)

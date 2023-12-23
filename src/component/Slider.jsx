@@ -1,11 +1,10 @@
-import React from 'react'
+import { movies } from '@/data/movies'
+import { useState } from 'react'
 import 'swiper/css'
-import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {useState} from 'react'
+import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import Card from './Card'
-import {movies} from '@/data/movies'
 
 const Slider = () => {
   const [swiperRef, setSwiperRef] = useState(null)

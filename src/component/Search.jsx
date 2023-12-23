@@ -1,7 +1,7 @@
-import {IoIosSearch} from 'react-icons/io'
-import React, {useState} from 'react'
+import { movies } from '@/data/movies'
 import classNames from 'classnames'
-import {movies} from '@/data/movies'
+import { useState } from 'react'
+import { IoIosSearch } from 'react-icons/io'
 
 const Search = ({handleSearchResults, handleSearchText}) => {
   const [search, setSearch] = useState('')

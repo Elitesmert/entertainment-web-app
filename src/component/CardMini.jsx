@@ -1,8 +1,7 @@
-import React from 'react'
+import { useState } from 'react'
+import { GoBookmark, GoBookmarkFill, GoDotFill } from 'react-icons/go'
+import { RiFilmFill } from 'react-icons/ri'
 import Thumbnail from './Thumbnail'
-import {GoBookmark, GoBookmarkFill, GoDotFill} from 'react-icons/go'
-import {RiFilmFill} from 'react-icons/ri'
-import {useState} from 'react'
 const CardMini = ({data, initialBookmarked, handleBookmark}) => {
   const [bookmarked, setBookmarked] = useState(initialBookmarked)
 

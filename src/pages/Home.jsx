@@ -1,8 +1,7 @@
 import Search from '@/component/Search'
 import Slider from '@/component/Slider'
-import React from 'react'
+import { useState } from 'react'
 import Recommended from './Recommended'
-import {useState} from 'react'
 
 const Home = () => {
   const [searchResults, setSearchResults] = useState(null)
