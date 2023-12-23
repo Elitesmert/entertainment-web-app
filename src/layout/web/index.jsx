@@ -3,7 +3,7 @@ import Sidebar from './compenents/Sidebar'
 
 const WebLayout = () => {
   return (
-    <main className='max-h-full text-white md:pt-6'>
+    <main className='max-h-full text-white xs:pt-6'>
       <Sidebar />
       <div className='h-max'>
         <Outlet />

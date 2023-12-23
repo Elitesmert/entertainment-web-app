@@ -8,7 +8,7 @@ const Home = () => {
   const [searchText, setSearchText] = useState('')
 
   return (
-    <div className='pt-6 md:pt-8'>
+    <div className='pt-6 xs:pt-8'>
       <Search
         handleSearchResults={(handleSearchResults) => setSearchResults(handleSearchResults)}
         handleSearchText={(handleSearchText) => setSearchText(handleSearchText)}

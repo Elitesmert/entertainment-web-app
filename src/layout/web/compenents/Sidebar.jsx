@@ -10,17 +10,17 @@ const Sidebar = () => {
   const parseData = JSON.parse(jsonData)
 
   return (
-    <aside className='md:px-6'>
+    <aside className='xs:px-6'>
       <div
         className='w-full h-14 bg-semiDarkBlue 
-       flex justify-between pr-4 pl-6 items-center md:rounded-[10px]'
+       flex justify-between pr-4 pl-6 items-center xs:rounded-[10px]'
       >
         <div>
           <Link to='/'>
-            <img src={logo} alt='logo' className='w-[25px] h-5 md:w-8 md:h-6' />
+            <img src={logo} alt='logo' className='w-[25px] h-5 xs:w-8 xs:h-6' />
           </Link>
         </div>
-        <div className='flex gap-5 md:gap-7'>
+        <div className='flex gap-5 xs:gap-7'>
           <NavLink
             to='/'
             className={({isActive}) => classNames('text-greyishBlue', {'text-white': !isActive})}
@@ -49,12 +49,12 @@ const Sidebar = () => {
         {parseData ? (
           <div className='rounded-full border border-white overflow-clip '>
             <Link to='/login'>
-              <img src={face} alt='logo' className='w-6 h-6 md:w-8 md:h-8' />
+              <img src={face} alt='logo' className='w-6 h-6 xs:w-8 xs:h-8' />
             </Link>
           </div>
         ) : (
           <Link to='/login'>
-            <RiLoginBoxFill className='w-5 h-5 md:w-8 md:h-8 cursor-pointer' />
+            <RiLoginBoxFill className='w-5 h-5 xs:w-8 xs:h-8 cursor-pointer' />
           </Link>
         )}
       </div>

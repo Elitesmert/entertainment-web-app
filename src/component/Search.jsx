@@ -18,12 +18,12 @@ const Search = ({handleSearchResults, handleSearchText}) => {
   }
 
   return (
-    <div className='w-full flex gap-6 items-center h-8 mb-[34px] px-4 md:px-6'>
+    <div className='w-full flex gap-6 items-center h-8 mb-[34px] px-4 xs:px-6'>
       <IoIosSearch className='w-8 h-8' />
       <div className='relative w-full'>
         <input
           type='text'
-          className='placeholder:text-gray-500 flex placeholder:typographyHXSM focus:outline-none caret-lightRed typographyHXSM bg-transparent w-full md:typographyHML md:placeholder:typographyHML'
+          className='placeholder:text-gray-500 flex placeholder:typographyHXSM focus:outline-none caret-lightRed typographyHXSM bg-transparent w-full xs:typographyHML xs:placeholder:typographyHML'
           placeholder='Search for movies or TV series '
           value={search}
           onFocus={() => setIsFocus(true)}

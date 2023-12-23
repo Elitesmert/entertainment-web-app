@@ -35,6 +35,9 @@ export default {
         'auto-fit-220': 'repeat(auto-fill, minmax(164px, 1fr))',
         'auto-fit-280': 'repeat(auto-fill, minmax(164px, 1fr))',
       },
+      screens: {
+        xs: '425px',
+      },
     },
   },
   darkMode: 'class',

@@ -62,7 +62,7 @@ const Login = () => {
       <div className='mx-auto w-8 mb-14'>
         <img src={logo} alt='' />
       </div>
-      <div className='px-6 pt-6 pb-8 bg-semiDarkBlue rounded-[10px] relative md:w-[400px] md:mx-auto'>
+      <div className='px-6 pt-6 pb-8 bg-semiDarkBlue rounded-[10px] relative xs:w-[400px] xs:mx-auto'>
         <div className='absolute -top-2 -right-2 bg-greyishBlue rounded-full flex justify-center items-center w-6 h-6 hover:bg-white group'>
           <Link to='/'>
             <IoClose className='text-white w-4 h-4 group-hover:text-lightRed' />

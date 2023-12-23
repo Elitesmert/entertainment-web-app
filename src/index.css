@@ -25,5 +25,5 @@
 
 body,
 html {
-  @apply bg-darkBlue;
+  @apply !bg-darkBlue;
 }
