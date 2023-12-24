@@ -2,6 +2,10 @@
 
 The project includes only design. The login screen works. First, you need to become a member and then you can log in with the same e-mail and password. The information you register with is on your own computer and does not appear anywhere else.
 
+## Screenshots
+
+![App Screenshot](https://res.cloudinary.com/ddlu6plcm/image/upload/v1703408088/gl4ikby9cn4mhrhlcfkm.png)
+
 ## Installation
 
 Clone the project.
