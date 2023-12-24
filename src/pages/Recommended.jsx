@@ -14,7 +14,7 @@ const Recommended = ({searchResults, searchText}) => {
           ? `Found ${searchResults.length} results for '${searchText}'`
           : 'Recommended for you'}
       </h1>
-      <div className='grid grid-cols-auto-fit-164 xs:grid-cols-auto-fit-220 gap-y-6 gap-x-[15px] xs:gap-x-[29px] justify-items-center'>
+      <div className='grid grid-cols-auto-fit-164 xs:grid-cols-auto-fit-220 md:grid-cols-auto-fit-280 gap-y-6 gap-x-[15px] xs:gap-x-[29px] md:gap-x-10 justify-items-center'>
         {searchText.length < 3
           ? movies
               .filter((item) => item.isTrend !== true)

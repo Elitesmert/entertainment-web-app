@@ -13,14 +13,14 @@ const Sidebar = () => {
     <aside className='xs:px-6'>
       <div
         className='w-full h-14 bg-semiDarkBlue 
-       flex justify-between pr-4 pl-6 items-center xs:rounded-[10px]'
+       flex justify-between pr-4 pl-6 items-center xs:rounded-[10px] md:flex-col md:h-screen md:px-7 md:pb-8 md:pt-9'
       >
         <div>
           <Link to='/'>
             <img src={logo} alt='logo' className='w-[25px] h-5 xs:w-8 xs:h-6' />
           </Link>
         </div>
-        <div className='flex gap-5 xs:gap-7'>
+        <div className='flex gap-5 xs:gap-7 md:flex-col'>
           <NavLink
             to='/'
             className={({isActive}) => classNames('text-greyishBlue', {'text-white': !isActive})}
@@ -49,12 +49,16 @@ const Sidebar = () => {
         {parseData ? (
           <div className='rounded-full border border-white overflow-clip '>
             <Link to='/login'>
-              <img src={face} alt='logo' className='w-6 h-6 xs:w-8 xs:h-8' />
+              <img
+                src={face}
+                alt='logo'
+                className='w-6 h-6 xs:w-8 xs:h-8 md:w-10 md:h-10 cursor-pointer'
+              />
             </Link>
           </div>
         ) : (
           <Link to='/login'>
-            <RiLoginBoxFill className='w-5 h-5 xs:w-8 xs:h-8 cursor-pointer' />
+            <RiLoginBoxFill className='w-5 h-5 xs:w-8 xs:h-8 md:w-10 md:h-10 ' />
           </Link>
         )}
       </div>

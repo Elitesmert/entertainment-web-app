@@ -24,7 +24,7 @@ const Bookmarked = () => {
               } results for '${searchText}' from your Bookmarked Movies`
             : 'Bookmarked Movies'}
         </h1>
-        <div className='grid grid-cols-auto-fit-164 xs:grid-cols-auto-fit-220 gap-y-6 gap-x-[15px] xs:gap-x-[29px] justify-items-center mb-6 xs:mb-12'>
+        <div className='grid grid-cols-auto-fit-164 xs:grid-cols-auto-fit-220 md:grid-cols-auto-fit-280 gap-y-6 gap-x-[15px] xs:gap-x-[29px] md:gap-x-10 justify-items-center'>
           {searchText.length < 3
             ? movies
                 .filter((item) => item.presentation === 'Movie' && item.isBookmarked)
@@ -58,7 +58,7 @@ const Bookmarked = () => {
               } results for '${searchText}' from your TV Series Bookmarks`
             : 'Bookmarked TV Series'}
         </h1>
-        <div className='grid grid-cols-auto-fit-164 xs:grid-cols-auto-fit-220 gap-y-6 gap-x-[15px] xs:gap-x-[29px] justify-items-center'>
+        <div className='grid grid-cols-auto-fit-164 xs:grid-cols-auto-fit-220 md:grid-cols-auto-fit-280 gap-y-6 gap-x-[15px] xs:gap-x-[29px] md:gap-x-10 justify-items-center'>
           {searchText.length < 3
             ? movies
                 .filter((item) => item.presentation === 'TV Series' && item.isBookmarked)

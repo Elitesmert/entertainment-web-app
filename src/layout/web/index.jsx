@@ -3,9 +3,9 @@ import Sidebar from './compenents/Sidebar'
 
 const WebLayout = () => {
   return (
-    <main className='max-h-full text-white xs:pt-6'>
+    <main className='text-white xs:pt-6 md:grid md:grid-cols-main'>
       <Sidebar />
-      <div className='h-max'>
+      <div className='overflow-auto'>
         <Outlet />
       </div>
     </main>

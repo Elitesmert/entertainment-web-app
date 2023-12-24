@@ -12,7 +12,7 @@ const CardMini = ({data, initialBookmarked, handleBookmark}) => {
     }
   }
   return (
-    <div className='w-[164px] xs:w-[220px] flex flex-col gap-2'>
+    <div className='w-[164px] xs:w-[220px] md:w-[280px] flex flex-col gap-2'>
       <div className='relative'>
         <Thumbnail image={data.image} />
         <div
