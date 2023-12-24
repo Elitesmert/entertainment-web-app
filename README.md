@@ -1,8 +1,43 @@
-# React + Vite
+# Entertainmet Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project includes only design. The login screen works. First, you need to become a member and then you can log in with the same e-mail and password. The information you register with is on your own computer and does not appear anywhere else.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the project.
+
+```console
+git clone https://github.com/Elitesmert/entertainment-web-app.git
+
+```
+
+```console
+cd project-name
+
+
+pnpm install
+
+# Or with npm:
+
+npm install
+
+```
+
+## Usage
+
+Projeyi başlatmak için aşağıdaki komutu kullanın:
+
+```bash
+
+pnpm dev
+
+# Or with npm:
+
+npm run dev
+
+```
+
+## Version History
+
+- **v1.0.0** (2023-12-24)
+  - First version released.
