@@ -29,9 +29,9 @@ npm install
 
 ## Usage
 
-Projeyi başlatmak için aşağıdaki komutu kullanın:
+Use the following command to start the project:
 
-```bash
+```console
 
 pnpm dev
 
